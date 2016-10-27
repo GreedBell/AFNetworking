@@ -75,7 +75,7 @@ EOS
   s.subspec 'UIKit' do |ss|
     ss.ios.deployment_target = '7.0'
     # ss.tvos.deployment_target = '9.0'
-
+    ss.frameworks = 'Foundation', 'UIKit'
     ss.dependency 'AFNetworking/NSURLSession'
 
     ss.public_header_files = 'UIKit+AFNetworking/*.h'
